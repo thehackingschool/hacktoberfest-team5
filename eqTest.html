@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>EQ Assessment</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <style>
+            body {
+    padding: 20px 150px;
+    background-color: #FFB6C1;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 2px 16px;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+  
+
+h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #FF74B1;
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+.qustions-div {
+    margin-top: 26px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ol {
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+button {
+    background: #ffffff;
+    border-radius: 20px;
+    color: #000000;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    box-shadow: 1px 1px 2px 0 #000000;
+    border: solid #FFB6C1 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: #FFB6C1 ;
+ }
+ 
+ button:hover {
+    border: solid #FF74B1 1px;
+    background: #FF74B1;
+    border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    outline: #ffffff;
+ }
+
+ .button-container {
+    text-align: center;
+    margin: auto;
+ }
+        </style>
+    </head>
+    <body>
+            <div class="card">
+                <h1>EQ Assessment</h1>
+                <h2>Answer all of the questions below to know your EQ :-</h2>
+                <div class="qustions-div">
+                    <h4 class="question">1) I can be very emotionally present with others (friends, family, partners,
+                        strangers), but it takes me a while to build trust and share vulnerable things about myself.</h4>
+                    <ol>
+        
+                        <li> <label> <input type="radio" name="question1" value="yes"> Yes</label><br></li>
+        
+                        <li><label> <input type="radio" name="question1" value="no">No</label><br></li>
+                    </ol>
+                    <h4 class="question">2) I often put other people in my life on a big pedestal. (Partner, friends, family)
+                    </h4>
+                    <ol>
+                        <li> <label> <input type="radio" name="question2" value="yes"> Yes</label><br></li>
+        
+                        <li><label> <input type="radio" name="question2" value="no">No</label><br></li>
+                    </ol>
+                    <h4 class="question">3) I feel naturally comfortable and safe expressing my feelings and needs to loved
+                        ones.</h4>
+                    <ol>
+                        <li> <label> <input type="radio" name="question3" value="yes"> Yes</label><br></li>
+        
+                        <li><label> <input type="radio" name="question3" value="no">No</label><br></li>
+                    </ol>
+                    <h4 class="question">4) I feel very upset when others infringe on my need for space or time alone.</h4>
+                    <ol>
+                        <li> <label> <input type="radio" name="question4" value="yes"> Yes</label><br></li>
+        
+                        <li><label> <input type="radio" name="question4" value="no">No</label><br></li>
+                    </ol>
+                    <h4 class="question">5) I am willing to work through challenges in a relationship before suddenly trying to
+                        leave the relationship itself. (If you're not in a relationship, think of how you would handle conflict
+                        in a partnership.)</h4>
+                    <ol>
+                        <li> <label> <input type="radio" name="question5" value="yes"> Yes</label><br></li>
+        
+                        <li><label> <input type="radio" name="question5" value="no">No</label><br></li>
+                    </ol>
+                    <h4 class="question">6) I do not become defensive when criticized.</h4>
+                    <ol>
+                        <li> <label> <input type="radio" name="question6" value="yes"> Yes</label><br></li>
+        
+                        <li><label> <input type="radio" name="question6" value="no">No</label><br></li>
+                    </ol>
+                    <h4 class="question">7) I maintain a sense of humor.</h4>
+                    <ol>
+                        <li> <label> <input type="radio" name="question7" value="yes"> Yes</label><br></li>
+        
+                        <li><label> <input type="radio" name="question7" value="no">No</label><br></li>
+                    </ol>
+                    <h4 class="question">8) I try to see things from another's perspective.</h4>
+                    <ol>
+                        <li> <label> <input type="radio" name="question8" value="yes"> Yes</label><br></li>
+        
+                        <li><label> <input type="radio" name="question8" value="no">No</label><br></li>
+                    </ol>
+                    <h4 class="question">9) I recognize how my behavior affects others.</h4>
+                    <ol>
+                        <li> <label> <input type="radio" name="question9" value="yes"> Yes</label><br></li>
+        
+                        <li><label> <input type="radio" name="question9" value="no">No</label><br></li>
+                    </ol>
+                    <h4 class="question">10) I can listen without jumping to judgment.</h4>
+                    <ol>
+                        <li> <label> <input type="radio" name="question10" value="yes"> Yes</label><br></li>
+        
+                        <li><label> <input type="radio" name="question10" value="no">No</label><br></li>
+                    </ol>
+                </div>
+                <div class="button-container"><button type="button" onclick="check()"><a href="index.html"> Submit Answers </a></button></div>
+            </div>
+            <script>
+                var score = 0
+        
+                function check() {
+        
+        
+        
+                    var card = document.querySelectorAll("input:checked");
+                    card.forEach((e) => {
+                        if (e.value === "yes") {
+                            score++;
+                        }
+                    })
+        
+                    localStorage.setItem('EQ-Score', score);
+        
+                    window.location.href = "index.html"
+                }
+            </script>
+    </body>
+</html>
